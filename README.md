@@ -24,9 +24,11 @@ cd LaravelByDocker
 ```
 
 2. **ساخت و اجرای کانتینر:**
+3. 
 ```bash
 docker compose up -d
 ```
+
 3. **نصب پیشنیازهای لاراول برای پورژه:**
 
 ```bash
@@ -34,8 +36,20 @@ docker exec -it laravel-app composer install
 docker exec -it laravel-app composer update
 docker exec -it laravel-app php artisan key:gen
 docker exec -it laravel-app php artisan migrate
-docker exec -it laravel-app php artisan serve
-docker exec -it laravel-app php artisan make:controller TestController
+```
+
+
+4. **پس از انجام این دستورات بالا برنامه در آدرس زیر دردستردس خواهد بود:**
+
+```bash
+http:localhost:8000
+```
+
+
+5. **و phpmyadmin در آدرس زبر قابل استفاده خواهد بود:**
+
+```bash
+http:localhost:8080
 ```
 
 
