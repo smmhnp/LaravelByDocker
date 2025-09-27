@@ -42,14 +42,14 @@ docker exec -it laravel-app php artisan migrate
 4. **پس از انجام این دستورات بالا برنامه در آدرس زیر دردستردس خواهد بود:**
 
 ```bash
-http:localhost:8000
+http://localhost:8000
 ```
 
 
 5. **و phpmyadmin در آدرس زبر قابل استفاده خواهد بود:**
 
 ```bash
-http:localhost:8080
+http://localhost:8080
 ```
 
 
