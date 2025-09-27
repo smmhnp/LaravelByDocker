@@ -24,7 +24,7 @@ cd LaravelByDocker
 ```
 
 2. **ساخت و اجرای کانتینر:**
-3. 
+
 ```bash
 docker compose up -d
 ```
