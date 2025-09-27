@@ -1,3 +1,45 @@
+# Laravel By Docker
+
+یک محیط توسعه کامل برای **Laravel** که تمام ابزارهای مورد نیاز (PHP, Nginx, MySQL, PhpMyAdmin) داخل **کانتینرهای Docker** اجرا می‌شوند.  
+با این روش، بدون نصب ابزارها روی سیستم، می‌توانید Laravel را اجرا، توسعه و تست کنید.
+
+---
+
+## 🔧 پیش‌نیازها
+
+- Docker
+- Docker Compose  
+
+اطمینان حاصل کنید که هر دو نصب و فعال هستند.
+
+---
+
+## 🚀 راه‌اندازی پروژه
+
+1. **کلون کردن پروژه:**
+
+```bash
+git clone https://github.com/smmhnp/LaravelByDocker.git
+cd LaravelByDocker
+```
+
+2. **ساخت و اجرای کانتینر:**
+```bash
+docker compose up -d
+```
+3. **نصب پیشنیازهای لاراول برای پورژه:**
+
+```bash
+docker exec -it laravel-app composer install
+docker exec -it laravel-app composer update
+docker exec -it laravel-app php artisan key:gen
+docker exec -it laravel-app php artisan migrate
+docker exec -it laravel-app php artisan serve
+docker exec -it laravel-app php artisan make:controller TestController
+```
+
+
+<br><br><br>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
