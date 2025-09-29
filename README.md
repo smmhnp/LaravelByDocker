@@ -21,6 +21,7 @@
 ```bash
 git clone https://github.com/smmhnp/LaravelByDocker.git
 cd LaravelByDocker
+cp .env.example .env
 ```
 
 2. **ساخت و اجرای کانتینر:**
